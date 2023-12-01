@@ -7,6 +7,10 @@ body {
   font-family: "Kanit", sans-serif;
 }
 
+@font-face {
+  font-family: ELNATH;
+  src: url(../fonts/ELNATH.ttf);
+}
 b {
   color: #ffff00;
 }
@@ -51,6 +55,8 @@ b {
 .nav-nombre h2 {
   color: #ffff00;
   margin: 10px;
+  font-family: ELNATH;
+  font-size: 19px;
 }
 
 .body-index-container {
@@ -67,11 +73,13 @@ b {
 
 .bienvenida h3 {
   margin: 0;
+  font-family: ELNATH;
 }
 
 .titulo-quienSoy h1 {
   margin: 0;
-  font-size: 50px;
+  font-size: 40px;
+  font-family: ELNATH;
 }
 
 .texto-quienSoy {
@@ -128,20 +136,25 @@ b {
   text-align: center;
 }
 
-/*---------Habilidades------------------------------*/
+/*=================Habilidades===============================*/
 .body-habilidades-container {
   margin: 40px;
+}
+
+.titulo-habilidades h1 {
+  font-family: ELNATH;
+  font-size: 40px;
 }
 
 .habilidades-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .habilidades-items {
   margin: 70px;
-  padding: 30px;
+  padding: 28px;
   border-radius: 40px;
   background-color: rgb(16, 15, 15);
 }
@@ -158,12 +171,83 @@ b {
   width: 64px;
 }
 
-#javascript-item {
-  box-shadow: 0 0 7px #ffff00;
+#html-item {
+  box-shadow: 0 0 10px #FF5733;
+  transition-duration: 0.5s;
+}
+#html-item:hover {
+  box-shadow: 0 0 80px #FF5733;
+  transform: scale(1.06);
 }
 
-.estrella1 {
+#css-item {
+  box-shadow: 0 0 10px #164DFA;
+  transition-duration: 0.5s;
+}
+#css-item:hover {
+  box-shadow: 0 0 80px #164DFA;
+  transform: scale(1.06);
+}
+
+#javascript-item {
+  box-shadow: 0 0 10px #ffff00;
+  transition-duration: 0.5s;
+}
+#javascript-item:hover {
+  box-shadow: 0 0 80px #ffff00;
+  transform: scale(1.06);
+}
+
+#git-item {
+  box-shadow: 0 0 10px #e73710;
+  transition-duration: 0.5s;
+}
+#git-item:hover {
+  box-shadow: 0 0 80px #e73710;
+  transform: scale(1.06);
+}
+
+#github-item {
+  box-shadow: 0 0 10px #FFF;
+  transition-duration: 0.5s;
+}
+#github-item:hover {
+  box-shadow: 0 0 80px #fff;
+  transform: scale(1.06);
+}
+
+#canva-item {
+  box-shadow: 0 0 10px #16fafa;
+  transition-duration: 0.5s;
+}
+#canva-item:hover {
+  box-shadow: 0 0 80px #16fafa;
+  transform: scale(1.06);
+}
+
+#bootstrap-item {
+  box-shadow: 0 0 10px #eb33ff;
+  transition-duration: 0.5s;
+}
+#bootstrap-item:hover {
+  box-shadow: 0 0 80px #eb33ff;
+  transform: scale(1.06);
+}
+
+#figma-item {
+  box-shadow: 0 0 10px #0acf83;
+  transition-duration: 0.5s;
+}
+#figma-item:hover {
+  box-shadow: 0 0 80px #0acf83;
+  transform: scale(1.06);
+}
+
+.estrella1, .estrella2, .estrella3 {
   padding-top: 20px;
   color: #ffff00;
   text-shadow: 4px 4px 4px 20px #ffff00;
+  height: 20px;
+  width: 20px;
+  filter: drop-shadow(0 0 4px #ffff00);
 }/*# sourceMappingURL=style.css.map */
