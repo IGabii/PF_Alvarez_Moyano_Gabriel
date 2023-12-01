@@ -126,4 +126,44 @@ b {
 .anosExperiencia, .ganasDeAprender, .proyectosCompletados {
   padding: 0 10px;
   text-align: center;
+}
+
+/*---------Habilidades------------------------------*/
+.body-habilidades-container {
+  margin: 40px;
+}
+
+.habilidades-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.habilidades-items {
+  margin: 70px;
+  padding: 30px;
+  border-radius: 40px;
+  background-color: rgb(16, 15, 15);
+}
+.habilidades-items figure {
+  margin: 0;
+  text-align: center;
+}
+
+#javascript figure, #github figure, #bootstrap figure {
+  text-align: center;
+  margin: 0;
+}
+#javascript figure img, #github figure img, #bootstrap figure img {
+  width: 64px;
+}
+
+#javascript-item {
+  box-shadow: 0 0 7px #ffff00;
+}
+
+.estrella1 {
+  padding-top: 20px;
+  color: #ffff00;
+  text-shadow: 4px 4px 4px 20px #ffff00;
 }/*# sourceMappingURL=style.css.map */
