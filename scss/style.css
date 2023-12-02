@@ -252,4 +252,70 @@ b {
   filter: drop-shadow(0 0 4px #ffff00);
 }
 
-/*============Curriculum=========================*//*# sourceMappingURL=style.css.map */
+/*============Curriculum=========================*/
+.curriculum-container {
+  display: grid;
+  grid-template-areas: "tituloEducacion tituloExperiencia" "educacion1 trabajo1" "educacion2 trabajo2" "educacion3 none";
+  grid-template-columns: 1fr 1fr;
+}
+
+.titulo-educacion {
+  grid-area: tituloEducacion;
+}
+
+.educacion1 {
+  grid-area: educacion1;
+}
+
+.educacion2 {
+  grid-area: educacion2;
+}
+
+.educacion3 {
+  grid-area: educacion3;
+}
+
+.titulo-experiencia {
+  grid-area: tituloExperiencia;
+}
+
+.experiencia1 {
+  grid-area: trabajo1;
+}
+
+.experiencia2 {
+  grid-area: trabajo2;
+}
+
+.educacion1, .educacion2, .educacion3, .experiencia1, .experiencia2 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+  padding: 10px 10px;
+  background-color: #181818;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #aeadad;
+  transition-duration: 0.2s;
+}
+.educacion1:hover, .educacion2:hover, .educacion3:hover, .experiencia1:hover, .experiencia2:hover {
+  background-color: #2c2b2b;
+  transform: scale(1.02);
+}
+.educacion1 h3, .educacion1 h4, .educacion1 h5, .educacion1 h6, .educacion2 h3, .educacion2 h4, .educacion2 h5, .educacion2 h6, .educacion3 h3, .educacion3 h4, .educacion3 h5, .educacion3 h6, .experiencia1 h3, .experiencia1 h4, .experiencia1 h5, .experiencia1 h6, .experiencia2 h3, .experiencia2 h4, .experiencia2 h5, .experiencia2 h6 {
+  font-size: 17px;
+  margin: 20px;
+}
+.educacion1 figure, .educacion2 figure, .educacion3 figure, .experiencia1 figure, .experiencia2 figure {
+  width: 120px;
+}
+.educacion1 figure img, .educacion2 figure img, .educacion3 figure img, .experiencia1 figure img, .experiencia2 figure img {
+  width: 100%;
+}
+
+.titulo-educacion, .titulo-experiencia {
+  text-align: center;
+  font-size: 20px;
+  font-family: ELNATH;
+}/*# sourceMappingURL=style.css.map */
