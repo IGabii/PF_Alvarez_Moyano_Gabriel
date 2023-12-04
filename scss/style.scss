@@ -113,12 +113,13 @@ b{
         padding: 10px;
         border-radius: 10px;
         transition-duration: 0.5s;
-        border:solid $color-morado 1px;
+        border:solid rgba(163, 159, 167, 0.467) 1px;
+        background: #8E2DE2;
+        background: linear-gradient(to right, #4A00E0, #8E2DE2);
         &:hover{
-            background-color: $color-morado;
-            color:#000;
             border-radius: 20px;
             animation-name: boton;
+            border:solid rgba(255, 255, 255, 0.467) 1px;
         }
     }
 }
@@ -403,9 +404,11 @@ b{
 
     li{
         margin: 20px;
-        padding: 6px;
+        padding: 7px;
         font-style: none;
-        background-color: $color-morado;
+        background: #8E2DE2;
+        background: linear-gradient(to right, #4A00E0, #8E2DE2);
+        border:solid #5e5c5c 1px;
         border-radius: 20px;
     }
 }
