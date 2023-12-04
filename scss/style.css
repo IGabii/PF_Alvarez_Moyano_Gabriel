@@ -50,7 +50,8 @@ b {
   border-radius: 10px;
 }
 .nav-links-items a:hover {
-  background-color: #8c00ff;
+  background: #8E2DE2;
+  background: linear-gradient(to right, #4A00E0, #8E2DE2);
   border-radius: 20px;
 }
 
