@@ -157,11 +157,11 @@ b{
 
 /*=================HABILIDADES===============================*/
 
-.body-habilidades-container,.body-curriculum-container,.body-portafolio-container{
+.body-habilidades-container,.body-curriculum-container,.body-portafolio-container, .body-contacto-container{
     margin:40px;
 }
 
-.titulo-habilidades,.titulo-curriculum,.titulo-portafolio{
+.titulo-habilidades,.titulo-curriculum,.titulo-portafolio, .titulo-contacto{
     h1{
         font-family:ELNATH ;
         font-size: 40px;
@@ -418,6 +418,70 @@ b{
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 18px;
+}
+
+
+/*=============CONTACTO============================*/
+
+.contacto-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:40px;
+}
+
+.contacto-item{
+    box-shadow: 0 0 10px $color-morado;
+    border-radius: 20px;
+    width: 500px;
+}
+
+.contacto-titulo-item{
+    text-align: center;
+    padding-top: 30px;
+    h3{
+        margin:0;
+        font-family:ELNATH;
+    }
+}
+
+.contacto-input-item{
+    padding: 0px 40px 40px 40px;
+    section{
+        padding: 20px;
+        input,textarea{
+            width: 100%;
+            height: 30px;
+            border:none;
+            background:transparent;
+            color:#fff;
+            border-bottom: solid $color-morado;
+            &:focus{
+                outline:none;
+                color:#fff;
+            }
+        }
+        textarea{
+            min-width:300px ;
+            min-height: 100px;
+            resize:none;
+        }
+        .enviar{
+            background: #8E2DE2;
+            background: linear-gradient(to right, #4A00E0, #8E2DE2);
+            border:none;
+            border-radius: 20px;
+            transition-duration:0.3s ;
+            height: 40px;
+            &:hover{
+                box-shadow: 0 0 10px $color-morado;
+                border-radius: 10px;
+            }
+            &:active{
+                transform: scale(1.03);
+            }
+        }
+    }
 }
 
 
