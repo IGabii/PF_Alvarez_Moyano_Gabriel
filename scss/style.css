@@ -357,7 +357,6 @@ b {
 }
 .imagen-portafolio figure img {
   width: 100%;
-  border-radius: 20px;
   transition-duration: 0.4s;
 }
 .imagen-portafolio figure img:hover {
