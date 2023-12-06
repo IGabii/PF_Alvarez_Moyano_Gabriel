@@ -442,7 +442,40 @@ b {
 .contacto-input-item section .enviar:hover {
   box-shadow: 0 0 10px #8c00ff;
   border-radius: 10px;
+  cursor: pointer;
 }
 .contacto-input-item section .enviar:active {
   transform: scale(1.03);
+}
+
+/*==========FOOTER===============================*/
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #3b1a5f;
+  background: linear-gradient(to right, #4c096e, #391361);
+}
+
+.titulo-footer {
+  color: #d9d6dc;
+  font-family: ELNATH;
+  font-size: 16px;
+}
+
+.contacto-footer {
+  display: flex;
+  padding: 20px;
+}
+
+.icon-footer {
+  margin: 0px 50px;
+  height: 27px;
+  width: 27px;
+  color: #d9d6dc;
+  transition-duration: 0.4s;
+}
+.icon-footer:hover {
+  transform: scale(1.3);
 }/*# sourceMappingURL=style.css.map */
