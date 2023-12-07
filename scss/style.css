@@ -74,6 +74,7 @@ b {
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   margin: 40px;
+  padding-bottom: 50px;
 }
 
 .presentacion-container {
@@ -492,6 +493,12 @@ b {
     margin: 20px;
   }
 }
+@media only screen and (max-width: 1000px) {
+  .body-index-container {
+    grid-template-areas: "presentacion" "foto";
+    grid-template-columns: 1fr;
+  }
+}
 @media only screen and (max-width: 950px) {
   header .header-container {
     display: none;
@@ -564,5 +571,43 @@ b {
   }
   .links-responsive a:hover {
     color: #74638e;
+  }
+}
+@media only screen and (max-width: 590px) {
+  .body-index-container {
+    margin: 15px;
+  }
+  .titulo-quienSoy h1 {
+    font-size: 32px;
+  }
+  .texto-quienSoy {
+    font-size: 14px;
+    padding-bottom: 20px;
+  }
+  .foto figure {
+    width: 250px;
+  }
+}
+@media only screen and (max-width: 422px) {
+  .titulo-quienSoy h1 {
+    font-size: 28px;
+  }
+  .foto figure {
+    width: 200px;
+  }
+  .proyectosCompletados h3, .ganasDeAprender h3, .anosExperiencia h3 {
+    font-size: 13px;
+  }
+  .contacto-footer {
+    padding: 2px;
+  }
+  .icon-footer {
+    width: 23px;
+    height: 23px;
+  }
+}
+@media only screen and (max-width: 387px) {
+  .titulo-quienSoy h1 {
+    font-size: 24px;
   }
 }/*# sourceMappingURL=style.css.map */
