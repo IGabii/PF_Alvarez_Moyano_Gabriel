@@ -13,7 +13,7 @@
 </head>
 <body>
     <main>
-        <header>
+        <header class="header-pc">
             <div class="header-container">
                 <nav>
                     <div class="nav-container">
@@ -41,6 +41,28 @@
                     </div>
                 </nav>
             </div>
+        </header>
+        <header class="header-responsive">   <!--Header Responsive (Menu hamburgesa)-->
+            <nav class="navbar-responsive">
+                <figure>
+                    <a href="../index.html">
+                        <img src="../galeria/logos/logoSinFondo.png" alt="logo GA">
+                    </a>
+                </figure>
+                <label class="label-hamburgesa" for="menu-hamburgesa">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="list-icon" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                    </svg>
+                </label>
+                <input type="checkbox" class="menu-hamburgesa" id="menu-hamburgesa">
+                <ul class="ul-links-responsive">
+                    <li class="links-responsive"><a href="index.html">Sobre Mi</a></li>
+                    <li class="links-responsive"><a href="../html/habilidades.html">Habilidades</a></li>
+                    <li class="links-responsive"><a href="../html/curriculum.html">Curriculum</a></li>
+                    <li class="links-responsive"><a href="../html/portafolio.html">Portafolio</a></li>
+                    <li class="links-responsive"><a href="../html/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
         </header>
         <div class="body-portafolio-container">
             <div class="titulo-portafolio">
