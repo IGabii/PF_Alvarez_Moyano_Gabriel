@@ -487,6 +487,24 @@ b {
 }
 
 /*===========RESPONSIVE======================*/
+@media only screen and (max-width: 1077px) {
+  .body-curriculum-container {
+    margin: 10px;
+  }
+  .curriculum-container {
+    grid-template-areas: "tituloEducacion" "educacion1" "educacion2" "educacion3" "tituloExperiencia" "trabajo1" "trabajo2";
+    grid-template-columns: 1fr;
+  }
+  .titulo-experiencia {
+    padding-top: 200px;
+  }
+  .titulo-educacion {
+    padding-top: 100px;
+  }
+  .educacion1, .educacion2, .educacion3, .experiencia1, .experiencia2 {
+    margin: 40px 10px;
+  }
+}
 @media only screen and (max-width: 1059px) {
   .nav-links-items a {
     font-size: 15px;
@@ -574,6 +592,9 @@ b {
   }
 }
 @media only screen and (max-width: 810px) {
+  .body-habilidades-container {
+    margin: 10px;
+  }
   .titulo-habilidades h1 {
     font-size: 30px;
   }
@@ -590,6 +611,9 @@ b {
   .titulo-habilidades h1 {
     font-size: 20px;
   }
+  .educacion-texto h3, .educacion-texto h4, .educacion-texto h5, .educacion-texto h6, .experiencia-texto h3, .experiencia-texto h4, .experiencia-texto h5, .experiencia-texto h6 {
+    font-size: 15px;
+  }
   .titulo-quienSoy h1 {
     font-size: 32px;
   }
@@ -599,6 +623,15 @@ b {
   }
   .foto figure {
     width: 250px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .educacion-logo h3, .educacion-logo h4, .educacion-logo h5, .educacion-logo h6, .experiencia-logo h3, .experiencia-logo h4, .experiencia-logo h5, .experiencia-logo h6 {
+    font-size: 12px;
+  }
+  .educacion-logo figure, .experiencia-logo figure {
+    width: 90px;
+    margin: 0;
   }
 }
 @media only screen and (max-width: 422px) {
