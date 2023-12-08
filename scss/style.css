@@ -573,9 +573,22 @@ b {
     color: #74638e;
   }
 }
+@media only screen and (max-width: 810px) {
+  .titulo-habilidades h1 {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .habilidades-items {
+    margin: 40px;
+  }
+}
 @media only screen and (max-width: 590px) {
   .body-index-container {
     margin: 15px;
+  }
+  .titulo-habilidades h1 {
+    font-size: 20px;
   }
   .titulo-quienSoy h1 {
     font-size: 32px;
