@@ -3,19 +3,19 @@ body{
     padding: 0;
     box-sizing: border-box;
     color:#fff;
-    background: linear-gradient(90deg,#1a0332,#000000 50%,#1a0332);
-    font-family: 'Kanit', sans-serif;
+    background: linear-gradient(90deg,#1a0332,#000000 50%,#1a0332);         /*color de fondo*/
+    font-family: 'Kanit', sans-serif;           /*Fuente de letra*/
 }
 
 @font-face {
     font-family:ELNATH ;
-    src: url(../fonts/ELNATH.ttf);
+    src: url(../fonts/ELNATH.ttf);      /*Fuente de letra descargada para los titulos*/
 }
 
-$color-morado: #8c00ff;
+$color-morado: #8c00ff;         /*variable designado al color morado*/
 
 b{
-    color: $color-morado;
+    color: $color-morado;    
 }
 
 /*==========HEADER===========================================*/
@@ -45,7 +45,7 @@ b{
 }
 
 
-.nav-links-items{
+.nav-links-items{               /*Links del nav*/
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -80,7 +80,7 @@ b{
 .body-index-container{
     z-index: -1;
     display: grid;
-    grid-template-areas:"presentacion foto";
+    grid-template-areas:"presentacion foto";        
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     margin:40px;
@@ -116,7 +116,7 @@ b{
     a{
         margin: 20px 20px 20px 0;
         text-decoration: none;
-        color:#fff;
+        color:#fff;                         /*Se refiere al boton de descargar CV, no tiene similitud a curriculu.html*/
         padding: 10px;
         border-radius: 10px;
         transition-duration: 0.5s;
@@ -157,20 +157,20 @@ b{
 }
 
 .anosExperiencia, .ganasDeAprender, .proyectosCompletados{
-    padding:  0 10px;
+    padding:  0 10px;               /*datos debajo de la imagen en el index*/
     text-align: center;
 }
 
 /*=================HABILIDADES===============================*/
 
 .body-habilidades-container,.body-curriculum-container,.body-portafolio-container, .body-contacto-container{
-    margin:40px;
+    margin:40px;            /*margin de todos los paginas */
 }
 
 .titulo-habilidades,.titulo-curriculum,.titulo-portafolio, .titulo-contacto{
     h1{
         font-family:ELNATH ;
-        font-size: 40px;
+        font-size: 40px;        /*color, fuente de letra y subrayado a todas las paginas*/
         display: inline;
         border-bottom: solid $color-morado;
     }
@@ -195,14 +195,14 @@ b{
 
 #javascript, #github, #bootstrap{
     figure{
-        text-align: center;
+        text-align: center;         /*id para ajustar el tamaño de las imagenes que no eran del mismo tamaño que el resto*/
         margin:0;
         img{
             width: 64px;
         }
     }
-}
-
+}                       
+                                                /*colores distinitivos de cada herramienta*/
 #html-item{
     box-shadow:  0 0 10px #FF5733;
     transition-duration: 0.5s;
@@ -277,11 +277,11 @@ b{
 
 .estrella1,.estrella2,.estrella3{
     padding-top:20px ;
-    color:$color-morado;
-    text-shadow: 4px 4px 4px 20px $color-morado;
+    color:#ffff00;
+    text-shadow: 4px 4px 4px 20px #ffff00;            /*color y tamaño de las estrellas que hacen referencia a mis conocimientos con cada lenguaje*/
     height: 20px;
     width: 20px;
-    filter:drop-shadow(0 0 4px $color-morado);
+    filter:drop-shadow(0 0 4px #ffff00);
 }
 
 /*============CURRICULUM=========================*/
@@ -289,7 +289,7 @@ b{
 .curriculum-container{
     display: grid;
     grid-template-areas:
-    "tituloEducacion tituloExperiencia"
+    "tituloEducacion tituloExperiencia"             /*Organización de curriculum container con grid*/
     "educacion1 trabajo1"
     "educacion2 trabajo2"
     "educacion3 none";
@@ -376,7 +376,7 @@ b{
     height: 500px;
     padding:36px;
     margin:40px;
-    background-color: rgba(59, 18, 91, 0.2);
+    background-color: rgba(59, 18, 91, 0.2);            
     border:solid #5e5c5c 1px;
     transition-duration: 0.4s;
     &:hover{
@@ -405,7 +405,7 @@ b{
     ul{
         display: flex;
         justify-content: center;
-        list-style-type: none;
+        list-style-type: none;          /*informacion que enseña los lenguajes que use para crear mis proyectos*/
         padding: 0;
     }
 
@@ -519,7 +519,7 @@ b{
     height:27px;
     width:27px;
     color:#d9d6dc;
-    transition-duration: 0.4s;
+    transition-duration: 0.4s;          
     &:hover{
         transform: scale(1.3);
     }
@@ -537,7 +537,7 @@ b{
         grid-template-areas:
         "tituloEducacion"
         "educacion1"
-        "educacion2"
+        "educacion2"                /*ubica los elementos en columna para que se vea adaptable para dispositivos moviles*/
         "educacion3"
         "tituloExperiencia"
         "trabajo1"
@@ -563,16 +563,16 @@ b{
     .nav-links-items{
         a{
             font-size: 15px;
-            margin:20px
+            margin:20px                 /*reduccion de tamaños de los links*/
         }
     }
 }
 
 @media only screen and (max-width:1000px){
     .body-index-container{
-        grid-template-areas:
+        grid-template-areas:                /*ubica los elementos en columna para que se vea adaptable para dispositivos moviles*/
         "presentacion" 
-        "foto";
+        "foto";             
         grid-template-columns: 1fr;
     }
 
@@ -592,12 +592,12 @@ b{
 @media only screen and (max-width:950px){
     header{
         .header-container{
-            display: none;
+            display: none;          /*Se elimina el header para pc*/
         }
     }
 
     .header-responsive{
-        display: block;
+        display: block;         /*se aplica el header creado para dispositivos moviles*/
         z-index: 2;
         height: 80px;
         background: linear-gradient(90deg,#0d0119,#080510 50%,#0a0119);
@@ -608,7 +608,7 @@ b{
         height: 100%;
         width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-between;             
         align-items: center;
         flex-wrap: wrap;
         position: relative;
@@ -630,7 +630,7 @@ b{
 
     .menu-hamburgesa{
         display: none;
-        &:checked + .ul-links-responsive{
+        &:checked + .ul-links-responsive{               /*menu hamburgesa, al presionar el icono de lista (input checkbox) se extiende en la capa vertical donde se encuentran los links */
             height: calc(100vh - 80px);
         }
     }
@@ -652,7 +652,7 @@ b{
         left: 0;
         height: 0vh;
         display: flex;
-        flex-direction: column;
+        flex-direction: column;             /*lista desordenada con sus respectivos links ubicados dentro del navbar responsive (position absolute)*/
         justify-content: center;
         align-items: center;
         overflow: hidden;
@@ -796,7 +796,3 @@ b{
         }
     }
 }
-
-
-
-

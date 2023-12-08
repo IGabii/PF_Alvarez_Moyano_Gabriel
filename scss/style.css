@@ -1,16 +1,18 @@
+@charset "UTF-8";
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   color: #fff;
-  background: linear-gradient(90deg, #1a0332, #000000 50%, #1a0332);
-  font-family: "Kanit", sans-serif;
+  background: linear-gradient(90deg, #1a0332, #000000 50%, #1a0332); /*color de fondo*/
+  font-family: "Kanit", sans-serif; /*Fuente de letra*/
 }
 
 @font-face {
   font-family: ELNATH;
-  src: url(../fonts/ELNATH.ttf);
+  src: url(../fonts/ELNATH.ttf); /*Fuente de letra descargada para los titulos*/
 }
+/*variable designado al color morado*/
 b {
   color: #8c00ff;
 }
@@ -38,7 +40,7 @@ b {
   width: 100%;
 }
 
-.nav-links-items {
+.nav-links-items { /*Links del nav*/
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -103,7 +105,7 @@ b {
 .curriculum a {
   margin: 20px 20px 20px 0;
   text-decoration: none;
-  color: #fff;
+  color: #fff; /*Se refiere al boton de descargar CV, no tiene similitud a curriculu.html*/
   padding: 10px;
   border-radius: 10px;
   transition-duration: 0.5s;
@@ -143,18 +145,18 @@ b {
 }
 
 .anosExperiencia, .ganasDeAprender, .proyectosCompletados {
-  padding: 0 10px;
+  padding: 0 10px; /*datos debajo de la imagen en el index*/
   text-align: center;
 }
 
 /*=================HABILIDADES===============================*/
 .body-habilidades-container, .body-curriculum-container, .body-portafolio-container, .body-contacto-container {
-  margin: 40px;
+  margin: 40px; /*margin de todos los paginas */
 }
 
 .titulo-habilidades h1, .titulo-curriculum h1, .titulo-portafolio h1, .titulo-contacto h1 {
   font-family: ELNATH;
-  font-size: 40px;
+  font-size: 40px; /*color, fuente de letra y subrayado a todas las paginas*/
   display: inline;
   border-bottom: solid #8c00ff;
 }
@@ -177,13 +179,14 @@ b {
 }
 
 #javascript figure, #github figure, #bootstrap figure {
-  text-align: center;
+  text-align: center; /*id para ajustar el tamaño de las imagenes que no eran del mismo tamaño que el resto*/
   margin: 0;
 }
 #javascript figure img, #github figure img, #bootstrap figure img {
   width: 64px;
 }
 
+/*colores distinitivos de cada herramienta*/
 #html-item {
   box-shadow: 0 0 10px #FF5733;
   transition-duration: 0.5s;
@@ -258,11 +261,11 @@ b {
 
 .estrella1, .estrella2, .estrella3 {
   padding-top: 20px;
-  color: #8c00ff;
-  text-shadow: 4px 4px 4px 20px #8c00ff;
+  color: #ffff00;
+  text-shadow: 4px 4px 4px 20px #ffff00; /*color y tamaño de las estrellas que hacen referencia a mis conocimientos con cada lenguaje*/
   height: 20px;
   width: 20px;
-  filter: drop-shadow(0 0 4px #8c00ff);
+  filter: drop-shadow(0 0 4px #ffff00);
 }
 
 /*============CURRICULUM=========================*/
@@ -372,7 +375,7 @@ b {
 .lenguajesUsados-portafolio ul {
   display: flex;
   justify-content: center;
-  list-style-type: none;
+  list-style-type: none; /*informacion que enseña los lenguajes que use para crear mis proyectos*/
   padding: 0;
 }
 .lenguajesUsados-portafolio li {
@@ -529,10 +532,10 @@ b {
 }
 @media only screen and (max-width: 950px) {
   header .header-container {
-    display: none;
+    display: none; /*Se elimina el header para pc*/
   }
   .header-responsive {
-    display: block;
+    display: block; /*se aplica el header creado para dispositivos moviles*/
     z-index: 2;
     height: 80px;
     background: linear-gradient(90deg, #0d0119, #080510 50%, #0a0119);
@@ -561,7 +564,7 @@ b {
   .menu-hamburgesa {
     display: none;
   }
-  .menu-hamburgesa:checked + .ul-links-responsive {
+  .menu-hamburgesa:checked + .ul-links-responsive { /*menu hamburgesa, al presionar el icono de lista (input checkbox) se extiende en la capa vertical donde se encuentran los links */
     height: calc(100vh - 80px);
   }
   .list-icon {
@@ -580,7 +583,7 @@ b {
     left: 0;
     height: 0vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /*lista desordenada con sus respectivos links ubicados dentro del navbar responsive (position absolute)*/
     justify-content: center;
     align-items: center;
     overflow: hidden;
