@@ -397,6 +397,7 @@ b {
   justify-content: center;
   align-items: center;
   margin: 40px;
+  padding: 50px 0 100px 0;
 }
 
 .contacto-item {
@@ -633,6 +634,12 @@ b {
   .foto figure {
     width: 250px;
   }
+  .body-contacto-container {
+    margin: 10px;
+  }
+  .contacto-item {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 500px) {
   .educacion-logo h3, .educacion-logo h4, .educacion-logo h5, .educacion-logo h6, .experiencia-logo h3, .experiencia-logo h4, .experiencia-logo h5, .experiencia-logo h6 {
@@ -641,6 +648,9 @@ b {
   .educacion-logo figure, .experiencia-logo figure {
     width: 90px;
     margin: 0;
+  }
+  .contacto-input-item {
+    padding: 10px;
   }
 }
 @media only screen and (max-width: 422px) {
